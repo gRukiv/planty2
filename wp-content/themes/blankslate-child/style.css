@@ -1,0 +1,312 @@
+/*
+Theme Name: BlankSlate Child
+Theme URI: https://opencollective.com/blankslate
+Template: blankslate
+Author: Bryan Hadaway
+Author URI: https://opencollective.com/blankslate#section-contributors
+Description: Donate: https://opencollective.com/blankslate. Learn: https://blankslate.me/. BlankSlate is the definitive WordPress boilerplate starter theme. I've carefully constructed the most clean and minimalist theme possible for designers and developers to use as a base to build websites for clients or to build completely custom themes from scratch. Clean, simple, unstyled, semi-minified, unformatted, and valid code, SEO-friendly, jQuery-enabled, no programmer comments, standardized and as white label as possible, and most importantly, the CSS is reset for cross-browser-compatability, with no intrusive visual CSS styles added whatsoever. A perfect skeleton theme. For support and suggestions, go to: https://github.com/bhadaway/blankslate/issues. Thank you.
+Tags: accessibility-ready,one-column,two-columns,custom-menu,featured-images,microformats,sticky-post,threaded-comments,translation-ready
+Version: 2024.1.1712057906
+Updated: 2024-04-02 11:38:26
+
+*/
+
+/* PAGE D'ACCUEIL */
+
+
+.fond-banniere-accueil {
+
+    background-color: #fff; /* Couleur du fond du bord arrondi */
+    width: 100%; /* Largeur pleine de l'élément parent */
+    position: relative;
+  height: 900px;
+  border-bottom-left-radius: 50% 14%;
+  border-bottom-right-radius: 50% 14%;
+  top: -200px;
+
+}
+
+.titre-accueil {
+
+    z-index: 10;
+    top: 70px; 
+
+
+}
+
+.feuillage-gauche-banniere-page-accueil {
+    position: relative;
+    z-index: 5;
+    left: 350px; /* Position de l'image de gauche */
+    top: 350px;
+}
+
+.feuillage-droite-banniere-page-accueil {
+    position: relative;
+    z-index: 5;
+    left: -350px; 
+    top: 350px;
+}
+
+
+.canette-page-accueil {
+    width: 1307px;
+    height: 950px;
+    z-index: 10;
+    top: 240px;
+
+}
+
+
+
+.encadre-energie-des-plantes { 
+
+    bottom: 150px;
+
+
+}
+
+.fond-gout {
+    position:relative
+    background-color: #fff; /* Couleur du fond du bord arrondi */
+    width: 100%; /* Largeur pleine de l'élément parent */
+    position: relative;
+  height: 700px;
+  border-bottom-left-radius: 50% 6%;
+  border-bottom-right-radius: 50% 6%;
+
+
+
+}
+
+.image-gout-fraise {
+    position: absolute;
+    left: 317px; /* Position de l'image de fraise (gauche) */
+    top: 100px;
+    width: 393px;
+    height: 262px;
+}
+
+.image-gout-pamplemousse {
+    position: absolute;
+    left: 735px; /* Position de l'image de fraise (gauche) */
+    bottom: -115px;
+    width: 393px;
+    height: 262px;
+
+}
+
+.image-gout-framboise {
+    position: absolute;
+    left: 317px; /* Position de l'image de fraise (gauche) */
+    bottom: 500px;
+    width: 393px;
+    height: 262px;
+
+}
+
+.image-gout-citron {
+    position: absolute;
+    left: 735px; /* Position de l'image de fraise (gauche) */
+   bottom : -175px;
+    width: 393px;
+    height: 262px;
+
+}
+
+.gout-fraise {
+
+    position: relative;
+    right: 360px;
+    top: 150px;
+    color: white;
+    
+
+}
+
+.gout-framboise {
+
+    position: relative;
+    right: 340px;
+    top: 180px;
+
+}
+
+.gout-pamplemousse {
+
+    position: relative;
+    right: -40px;
+    top: 50px;
+
+}
+
+.gout-citron {
+
+    position: relative;
+    right: -40px;
+    top: 75px;
+
+}
+
+
+
+.fatiha {
+    positon:absolute;
+    right : 300px;
+}
+
+.vero {
+    positon:absolute;
+    left : 200px;
+    bottom: 200px
+}
+
+.marc {
+    positon:absolute;
+    left : 650px;
+    bottom: 390px
+}
+
+
+
+
+
+/* 
+PAGE "NOUS RENCONTRER"
+*/
+
+.banniere-nous-rencontrer {
+    background-color: #fff; /* Couleur du fond du bord arrondi */
+    width: 100%; /* Largeur pleine de l'élément parent */
+    border-bottom-left-radius: 25%; /* Arrondi le coin inférieur gauche */
+    border-bottom-right-radius: 25%; /* Arrondi le coin inférieur droit */
+
+
+}
+
+.image-plante-nous-rencontrer {
+    position: absolute;
+    z-index: 5;
+    width: 145.3px;
+    height: 150.26px;
+    top: 80px;
+    left: 200px;
+    gap: 0px;
+    opacity: 1; /* Changer l'opacité à 1 pour afficher l'image */
+    transform: rotate(45deg); /* Appliquer une rotation de -70 degrés */
+}
+
+.feuillage-l-equipe {
+    position: absolute;
+    z-index: 5;
+    left: 95px;
+    width: 191.21px;
+    height: 219.08px;
+    left: 1150px;
+    bottom: 0px;
+    
+}
+
+.formulaire-nous-rencontrer {
+    z-index: 10; /* Définissez un index z élevé pour placer cet élément au-dessus de l'image */
+}
+
+
+.feuillage-formulaire {
+    position: absolute;
+    width: 147.32px;
+    height: 134.97px;
+    bottom: 80px;
+    right: 1150px;
+    transform: rotate(20deg); /* Rotation de l'image de 160 degrés */
+    z-index: 5;
+}
+
+
+.wpr-form-field-textual.wpr-form-field {
+    z-index: 10;
+
+}
+
+
+
+/* PAGE "COMMANDER"*/
+
+
+.titre-fraise {
+    position: absolute;
+    bottom: 140px;
+    left : 80px;
+}
+
+.titre-pamplemousse {
+    position: absolute;
+    bottom: 120px;
+    left : 20px;
+}
+
+
+.titre-framboise {
+    position: absolute;
+    bottom: 140px;
+    left : 20px;
+}
+
+.titre-citron {
+    position: absolute;
+    bottom: 140px;
+    left : 80px;
+}
+
+.commander-formulaire {
+
+    margin-top: Opx;
+    padding: 0px 0px;
+}
+
+/* POUR ALIGNER LES BLOC COMPTEURS DE CHAQUE GOUTS */
+.wpr-forms-container .wpcf7 p {
+    display: flex;
+    justify-content: space-between;
+    
+    }
+    
+    .wpcf7-form-control-wrap[data-name="FRAISE"] {
+        bottom: 100px;
+        left: 90px;
+    }
+
+    .wpcf7-form-control-wrap[data-name="PAMPLEMOUSSE"] {
+        bottom: 100px;
+        left: 40px;
+    }
+
+    .wpcf7-form-control-wrap[data-name="FRAMBOISE"] {
+        bottom: 100px;
+        right: 40px;
+    }
+
+    .wpcf7-form-control-wrap[data-name="CITRON"] {
+        bottom: 100px;
+        right: 120px;
+
+    }
+
+    .colonne {
+        display: inline-block; /* Utilise Flexbox pour afficher les colonnes côte à côte */
+        justify-content: space-between; /* Espacement égal entre les colonnes */
+        max-width: 800px; /* Largeur maximale du conteneur */
+        margin: 150px; /* Centrer le conteneur horizontalement */
+    }
+
+    .vos-informations-titre {
+        top: 80px;
+        left : 240px;
+
+    }
+
+    .livraison-titre {
+        top: 150px;
+        left : 160px;
+
+    }
