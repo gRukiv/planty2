@@ -11,20 +11,32 @@ Updated: 2024-04-02 11:38:26
 
 */
 
+/* HEADER */
+
+#menu-item-113 {
+    background: rgb(211, 140, 132);
+    width: 236px; 
+    height: 80px; 
+}
+
+#menu-item-48 {
+    width: 236px; 
+    height: 80px; 
+}
+
+.header {
+
+    font-size: 25px;
+    
+}
+
+
+
+
 /* PAGE D'ACCUEIL */
 
 
-.fond-banniere-accueil {
-
-    background-color: #fff; /* Couleur du fond du bord arrondi */
-    width: 100%; /* Largeur pleine de l'élément parent */
-    position: relative;
-  height: 900px;
-  border-bottom-left-radius: 50% 14%;
-  border-bottom-right-radius: 50% 14%;
-  top: -200px;
-
-}
+/*bannière page d'accueuil */
 
 .titre-accueil {
 
@@ -34,138 +46,221 @@ Updated: 2024-04-02 11:38:26
 
 }
 
-.feuillage-gauche-banniere-page-accueil {
+.fond-banniere-page-accueil {
     position: relative;
-    z-index: 5;
-    left: 350px; /* Position de l'image de gauche */
-    top: 350px;
-}
-
-.feuillage-droite-banniere-page-accueil {
-    position: relative;
-    z-index: 5;
-    left: -350px; 
-    top: 350px;
-}
-
-
-.canette-page-accueil {
-    width: 1307px;
-    height: 950px;
-    z-index: 10;
-    top: 240px;
-
-}
-
-
-
-.encadre-energie-des-plantes { 
-
-    bottom: 150px;
-
-
-}
-
-.fond-gout {
-    position:relative
     background-color: #fff; /* Couleur du fond du bord arrondi */
     width: 100%; /* Largeur pleine de l'élément parent */
+   height: 900px;
+  border-bottom-left-radius: 50% 9%;
+  border-bottom-right-radius: 50% 9%;
+  top: -150px;
+
+}
+
+@media (max-width: 1024px) {
+    .fond-banniere-page-accueil {
+
+        height: 650px;
+    }
+}
+
+.canette-banniere-accueil {
+
+    z-index: 10;
     position: relative;
-  height: 700px;
-  border-bottom-left-radius: 50% 6%;
-  border-bottom-right-radius: 50% 6%;
-
 
 
 }
 
-.image-gout-fraise {
+@media (max-width: 1024px) {
+    .canette-banniere-accueil {
+        width: 250px;
+        height: 150px;
+    }
+}
+
+@media (max-width: 770px) {
+    .canette-banniere-accueil {
+        width: 250px;
+        bottom: 140px;
+    }
+}
+
+
+
+.feuillage-gauche-canette {
     position: absolute;
-    left: 317px; /* Position de l'image de fraise (gauche) */
-    top: 100px;
-    width: 393px;
-    height: 262px;
-}
-
-.image-gout-pamplemousse {
-    position: absolute;
-    left: 735px; /* Position de l'image de fraise (gauche) */
-    bottom: -115px;
-    width: 393px;
-    height: 262px;
+    z-index: 5;
+    right: -360px;
+    top: 350px;
 
 }
 
-.image-gout-framboise {
-    position: absolute;
-    left: 317px; /* Position de l'image de fraise (gauche) */
-    bottom: 500px;
-    width: 393px;
-    height: 262px;
+@media (max-width: 1024px) {
+    .feuillage-gauche-canette {
+        width: 200px;
+        left: 300px;
+        top: 300px;
+       
+    }
+}
+
+@media (max-width: 900px) {
+    .feuillage-gauche-canette {
+        display: none;
+    }
+}
+
+.feuillage-droite-canette {
+
+    z-index: 5;
+    left: -360px; 
+    top: 350px;
+
 
 }
 
-.image-gout-citron {
-    position: absolute;
-    left: 735px; /* Position de l'image de fraise (gauche) */
-   bottom : -175px;
-    width: 393px;
-    height: 262px;
+@media (max-width: 1024px) {
+    .feuillage-droite-canette {
+        width: 200px;
+        left: -250px;
+        top: 300px;
+       
+    }
+}
+
+@media (max-width: 900px) {
+    .feuillage-droite-canette {
+        display: none;
+    }
+}
+
+
+/* les gouts */
+
+.titre-les-gouts {
+
+    z-index: 10;
+
 
 }
+
+.fond-les-gouts-fraise-pam {
+
+    position: relative;
+    z-index: 5;
+}
+
+.fond-les-gouts-fram-citron {
+
+    position: relative;
+    z-index: 5;
+    background-color: #fff; /* Couleur du fond du bord arrondi */
+    width: 100%; /* Largeur pleine de l'élément parent */
+  border-bottom-left-radius: 50% 9%;
+  border-bottom-right-radius: 50% 9%;
+}
+
 
 .gout-fraise {
+    position: absolute;
+    z-index: 10;
+    bottom: 131px;
+    left: 50px;
 
-    position: relative;
-    right: 360px;
-    top: 150px;
-    color: white;
-    
+}
 
+@media (max-width: 1024px) {
+    .gout-fraise {
+        bottom: 400px;
+        left: 230px;
+       
+    }
 }
 
 .gout-framboise {
-
-    position: relative;
-    right: 340px;
-    top: 180px;
+    position: absolute;
+    z-index: 10;
+    bottom: 100px;    
 
 }
 
+@media (max-width: 1024px) {
+    .gout-framboise {
+        bottom: 400px;
+        left: 120px;
+       
+    }
+}
+
+
 .gout-pamplemousse {
 
-    position: relative;
-    right: -40px;
-    top: 50px;
+    position: absolute;
+    z-index: 10;
+    bottom: 100px;
 
+
+}
+
+@media (max-width: 1024px) {
+    .gout-pamplemousse {
+        bottom: 150px;
+        left: 60px;
+       
+    }
 }
 
 .gout-citron {
 
-    position: relative;
-    right: -40px;
-    top: 75px;
+    position: absolute;
+    z-index: 10;
+    bottom: 131px;
+    left: 50px;
 
 }
 
+@media (max-width: 1024px) {
+    .gout-citron {
+        bottom: 140px;
+        left: 220px;
+       
+    }
+}
+
+.bouton-commander {
+
+    z-index: 5;
+    bottom: 80px
+
+}
+
+
+
+/* ce qu'ils en pensent*/
 
 
 .fatiha {
-    positon:absolute;
-    right : 300px;
+    
+
 }
 
 .vero {
-    positon:absolute;
-    left : 200px;
-    bottom: 200px
+
+bottom: 180px;
+
 }
 
 .marc {
-    positon:absolute;
-    left : 650px;
-    bottom: 390px
+
+bottom: 370px;
+
 }
+
+
+
+
+/* _______________________________ */ 
 
 
 
@@ -207,8 +302,24 @@ PAGE "NOUS RENCONTRER"
     
 }
 
-.formulaire-nous-rencontrer {
-    z-index: 10; /* Définissez un index z élevé pour placer cet élément au-dessus de l'image */
+
+.elementor-15 .elementor-element.elementor-element-ebb6593 
+
+
+    @media (max-width: 1024px) {
+        .elementor-15 .elementor-element.elementor-element-ebb6593 
+        {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+           
+        }
+    }
+
+
+.nous-contacter-titre {
+
+    bottom: -100px;
 }
 
 
@@ -216,12 +327,11 @@ PAGE "NOUS RENCONTRER"
     position: absolute;
     width: 147.32px;
     height: 134.97px;
-    bottom: 80px;
-    right: 1150px;
-    transform: rotate(20deg); /* Rotation de l'image de 160 degrés */
+    bottom: 120px;
+    right: 835px;
+    transform: rotate(2deg); /* Rotation de l'image de 160 degrés */
     z-index: 5;
 }
-
 
 .wpr-form-field-textual.wpr-form-field {
     z-index: 10;
@@ -266,19 +376,22 @@ PAGE "NOUS RENCONTRER"
 
 /* POUR ALIGNER LES BLOC COMPTEURS DE CHAQUE GOUTS */
 .wpr-forms-container .wpcf7 p {
+    gap: 50px;
     display: flex;
-    justify-content: space-between;
-    
+
     }
-    
+
+
     .wpcf7-form-control-wrap[data-name="FRAISE"] {
         bottom: 100px;
         left: 90px;
+
     }
 
     .wpcf7-form-control-wrap[data-name="PAMPLEMOUSSE"] {
         bottom: 100px;
         left: 40px;
+        
     }
 
     .wpcf7-form-control-wrap[data-name="FRAMBOISE"] {
@@ -309,4 +422,22 @@ PAGE "NOUS RENCONTRER"
         top: 150px;
         left : 160px;
 
+    }
+
+
+
+    /* COMPTEUR */
+
+
+
+    .wpcf7-form-control-wrap {
+
+        margin-left: 150px;
+    }
+   
+
+    .p {
+
+
+        margin-left: 80px;
     }
