@@ -11,13 +11,27 @@ Updated: 2024-04-02 11:38:26
 
 */
 
-/* HEADER */
+/* ______________________________________________________________________HEADER */
+
+.elementor-160 .elementor-element.elementor-element-0050415:not(.elementor-motion-effects-element-type-background) {
+
+    height: 100px;
+}
+
+
+
+/**** ____________________________________________ MENU COMMANDER */
+
+
 
 #menu-item-113 {
     background: rgb(211, 140, 132);
     width: 236px; 
     height: 80px; 
 }
+
+
+
 
 #menu-item-48 {
     width: 236px; 
@@ -33,10 +47,10 @@ Updated: 2024-04-02 11:38:26
 
 
 
-/* PAGE D'ACCUEIL */
+/* ----------------------------------------------PAGE D'ACCUEIL */
 
 
-/*bannière page d'accueuil */
+/*_______________________________________________________bannière page d'accueuil */
 
 .titre-accueil {
 
@@ -136,31 +150,66 @@ Updated: 2024-04-02 11:38:26
 }
 
 
-/* les gouts */
 
-.titre-les-gouts {
+#energiedesplantes .e-con-inner {
 
-    z-index: 10;
-
-
+    height: 200px;
 }
 
-.fond-les-gouts-fraise-pam {
 
-    position: relative;
-    z-index: 5;
-}
 
-.fond-les-gouts-fram-citron {
 
-    position: relative;
-    z-index: 5;
+/*------------------------------------------------------------------- les gouts */
+
+
+
+.fond-les-gouts {
+
     background-color: #fff; /* Couleur du fond du bord arrondi */
     width: 100%; /* Largeur pleine de l'élément parent */
-  border-bottom-left-radius: 50% 9%;
-  border-bottom-right-radius: 50% 9%;
+  border-bottom-left-radius: 50% 20%;
+  border-bottom-right-radius: 50% 20%;
+
 }
 
+
+#containeur-les-gouts .e-con-inner {
+
+    max-width: 890px;
+
+
+}
+
+
+
+.image-fraise {
+
+    width: 393px;
+    height: 262px;
+}
+
+
+.image-pamplemousse {
+
+    width: 393px;
+    height: 262px;
+}
+
+.image-framboise {
+
+    width: 393px;
+    height: 262px;
+}
+
+.image-citron {
+
+    width: 393px;
+    height: 262px;
+}
+
+
+
+/*______________________________________________________________________TITRE GOUT */
 
 .gout-fraise {
     position: absolute;
@@ -170,13 +219,6 @@ Updated: 2024-04-02 11:38:26
 
 }
 
-@media (max-width: 1024px) {
-    .gout-fraise {
-        bottom: 400px;
-        left: 230px;
-       
-    }
-}
 
 .gout-framboise {
     position: absolute;
@@ -185,13 +227,6 @@ Updated: 2024-04-02 11:38:26
 
 }
 
-@media (max-width: 1024px) {
-    .gout-framboise {
-        bottom: 400px;
-        left: 120px;
-       
-    }
-}
 
 
 .gout-pamplemousse {
@@ -203,13 +238,6 @@ Updated: 2024-04-02 11:38:26
 
 }
 
-@media (max-width: 1024px) {
-    .gout-pamplemousse {
-        bottom: 150px;
-        left: 60px;
-       
-    }
-}
 
 .gout-citron {
 
@@ -220,24 +248,10 @@ Updated: 2024-04-02 11:38:26
 
 }
 
-@media (max-width: 1024px) {
-    .gout-citron {
-        bottom: 140px;
-        left: 220px;
-       
-    }
-}
-
-.bouton-commander {
-
-    z-index: 5;
-    bottom: 80px
-
-}
 
 
 
-/* ce qu'ils en pensent*/
+/* --------------------------------------------------------------------ce qu'ils en pensent*/
 
 
 .fatiha {
@@ -260,15 +274,8 @@ bottom: 370px;
 
 
 
-/* _______________________________ */ 
 
-
-
-
-
-/* 
-PAGE "NOUS RENCONTRER"
-*/
+/* ------------------------------------------------------------PAGE "NOUS RENCONTRER" */
 
 .banniere-nous-rencontrer {
     background-color: #fff; /* Couleur du fond du bord arrondi */
@@ -291,43 +298,39 @@ PAGE "NOUS RENCONTRER"
     transform: rotate(45deg); /* Appliquer une rotation de -70 degrés */
 }
 
+
+/* ------------------------------------------------------------ section l'équipe */
+
+#equipe {
+
+    max-width: 65%;
+
+}
+
+#equipe .e-con-inner {
+
+    height: 300px;
+}
+
+
 .feuillage-l-equipe {
     position: absolute;
     z-index: 5;
-    left: 95px;
     width: 191.21px;
     height: 219.08px;
     left: 1150px;
-    bottom: 0px;
-    
+    top: -90px;    
 }
 
 
-.elementor-15 .elementor-element.elementor-element-ebb6593 
 
-
-    @media (max-width: 1024px) {
-        .elementor-15 .elementor-element.elementor-element-ebb6593 
-        {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-           
-        }
-    }
-
-
-.nous-contacter-titre {
-
-    bottom: -100px;
-}
-
+/* ------------------------------------------------------------ section FORMULAIRE NOUS CONTACTER */
 
 .feuillage-formulaire {
     position: absolute;
     width: 147.32px;
     height: 134.97px;
-    bottom: 120px;
+    bottom: 40px;
     right: 835px;
     transform: rotate(2deg); /* Rotation de l'image de 160 degrés */
     z-index: 5;
@@ -338,106 +341,173 @@ PAGE "NOUS RENCONTRER"
 
 }
 
+#nous-contacter .e-con-inner {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    }
 
 
-/* PAGE "COMMANDER"*/
+#form-field-name {
+
+    height: 71px;
+}
+
+#form-field-email {
+
+    height: 71px;
+}
+
+#form-field-message {
+
+    height: 237px;
+}
+
+
+
+
+/*------------------------------------------------------------------------ PAGE "COMMANDER"*/
+
+/* --------------------------------------------------------------------------------compteur gout */
+
+
+.e-con.e-grid, .e-con.e-grid>.e-con-inner {
+
+    grid-template-rows: none;
+}
+
+#form-field-message {
+
+    height: 56px;
+max-width: 39px;
+}
+
+
+
+/* FRAISE */
 
 
 .titre-fraise {
     position: absolute;
-    bottom: 140px;
-    left : 80px;
+    top: 70px; 
+    left: 100px;
+
 }
+
+.elementor-17 .elementor-element.elementor-element-79d279c .wpr-field-group.wpr-form-field-type-submit {
+
+    display: none;
+}
+
+/*PAMPLEMOUSE*/
 
 .titre-pamplemousse {
     position: absolute;
-    bottom: 120px;
-    left : 20px;
+    top: 70px; 
+    left: 100px;
 }
 
+
+.elementor-17 .elementor-element.elementor-element-c9443b9 .wpr-button[type="submit"] {
+
+    display: none;
+
+}
+
+
+/*FRAMBOISE*/
 
 .titre-framboise {
     position: absolute;
-    bottom: 140px;
-    left : 20px;
+    top: 70px; 
+    left: 100px;
 }
+
+
+.elementor-17 .elementor-element.elementor-element-0e4b6ed .wpr-button[type="submit"] {
+
+    display: none;
+}
+
+/*CITRON*/ 
 
 .titre-citron {
     position: absolute;
-    bottom: 140px;
-    left : 80px;
+    top: 70px; 
+    left: 100px;
+
 }
 
-.commander-formulaire {
 
-    margin-top: Opx;
-    padding: 0px 0px;
+/*---------------------------------------------------------------------- VOS INFOS & LIVRAISON*/
+
+.elementor-17 .elementor-element.elementor-element-8d486e7 .wpr-button[type="submit"] {
+
+    display: none;
 }
 
-/* POUR ALIGNER LES BLOC COMPTEURS DE CHAQUE GOUTS */
-.wpr-forms-container .wpcf7 p {
-    gap: 50px;
-    display: flex;
 
-    }
+.vos-informations {
 
+    left: 200px;
 
-    .wpcf7-form-control-wrap[data-name="FRAISE"] {
-        bottom: 100px;
-        left: 90px;
+}
 
-    }
+.livraison {
 
-    .wpcf7-form-control-wrap[data-name="PAMPLEMOUSSE"] {
-        bottom: 100px;
-        left: 40px;
-        
-    }
+    right: 200px;
 
-    .wpcf7-form-control-wrap[data-name="FRAMBOISE"] {
-        bottom: 100px;
-        right: 40px;
-    }
-
-    .wpcf7-form-control-wrap[data-name="CITRON"] {
-        bottom: 100px;
-        right: 120px;
-
-    }
-
-    .colonne {
-        display: inline-block; /* Utilise Flexbox pour afficher les colonnes côte à côte */
-        justify-content: space-between; /* Espacement égal entre les colonnes */
-        max-width: 800px; /* Largeur maximale du conteneur */
-        margin: 150px; /* Centrer le conteneur horizontalement */
-    }
-
-    .vos-informations-titre {
-        top: 80px;
-        left : 240px;
-
-    }
-
-    .livraison-titre {
-        top: 150px;
-        left : 160px;
-
-    }
+}
 
 
+#form-field-name-vos-informations {
 
-    /* COMPTEUR */
+   height: 71px;
+}
 
+#form-field-prenom-vos-informations {
 
-
-    .wpcf7-form-control-wrap {
-
-        margin-left: 150px;
-    }
-   
-
-    .p {
+    height: 71px;
+ }
 
 
-        margin-left: 80px;
-    }
+ #form-field-email-vos-informations {
+
+    height: 71px;
+ }
+
+
+ #form-field-adresse-livraison {
+
+    height: 71px;
+ }
+
+ #form-field-code-postal {
+
+    height: 71px;
+ }
+
+ #form-field-ville {
+
+    height: 71px;
+ }
+ 
+ #envoyer-vos-informations {
+
+    display: none;
+ }
+
+#envoyer-livraison {
+
+    display: none;
+}
+ 
+ 
+
+
+
+
+
+/*___________*
