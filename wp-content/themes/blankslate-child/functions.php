@@ -22,3 +22,18 @@ endif;
 add_action( 'wp_enqueue_scripts', 'chld_thm_cfg_parent_css', 10 );
 
 // END ENQUEUE PARENT ACTION
+
+
+// LIEN ADMIN //
+
+add_filter('wp_nav_menu_items', 'show_admin_link_for_logged_in_users', 10, 2);
+
+function show_admin_link_for_logged_in_users($items, $args) {
+    // Check if the user is logged in
+    if (is_user_logged_in()) {
+        // Add the Admin link to the menu items
+        $items .= '<li class="menu-item"><a href="' . admin_url() . '">Admin</a></li>';
+    }
+    return $items;
+}
+

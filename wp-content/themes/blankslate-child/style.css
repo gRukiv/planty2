@@ -11,7 +11,7 @@ Updated: 2024-04-02 11:38:26
 
 */
 
-/* ______________________________________________________________________HEADER */
+/* ________________________________________________________________________________HEADER */
 
 .elementor-160 .elementor-element.elementor-element-0050415:not(.elementor-motion-effects-element-type-background) {
 
@@ -20,34 +20,183 @@ Updated: 2024-04-02 11:38:26
 
 
 
-/**** ____________________________________________ MENU COMMANDER */
+/**** _________________________________________________ MENU COMMANDER & nous rencontrer */
 
 
+
+/*BOUTON COMMANDER*/
 
 #menu-item-113 {
     background: rgb(211, 140, 132);
     width: 236px; 
     height: 80px; 
+    order: 1;
 }
 
 
+#menu-item-113 a {
 
-
-#menu-item-48 {
-    width: 236px; 
-    height: 80px; 
+    font-size: 16px;
+    font-weight: 700;
+    color:white;  
 }
 
-.header {
+@media (max-width: 1024px) {
+    #menu-item-113 {
 
-    font-size: 25px;
+     background: none;
+     width: auto;  
+     height: auto;
+     
+}
+#menu-item-113 a {
+    color:black;  
+    padding: 0;
+    font-weight: 300;
+}
+}
+
+
+/*BOUTON NOUS RENCONTRER*/
+
+#menu-item-48 a {
+
+    font-size: 16px;
+    font-weight: 400;
+    color:black   
+}
+
+@media (max-width: 1024px) {
+    #menu-item-48 a {
+
+padding: 0;   
+
+}
+}
+
+
+/*BOUTON ADMIN*/
+
+
+
+.menu-item a {
+
+font-size: 16px; 
+font-weight: 400;
+color: black;
+font-family: 'Syne', sans serif;
+
+}
+
+@media (max-width: 1024px) {
+    .menu-item a{
+
+        padding: 0;
+    }
+}
+
+
+/*POSITIONNEMENT MENU ÉCRAN ORDI*/
+
+.elementor-160 .elementor-element.elementor-element-0af99c2 {
+
+    width: 100%;
+   
+}
+
+
+/* MENU DÉROULANT */
+
+
+
+#menu-1-523600c {
+
+    align-items: center;
+    gap: 25px;
+}
+
+
+#menu-1-523600c .menu-item {
     
+    left: 20px;
+}
+
+
+@media (max-width: 1024px) {
+    #menu-1-523600c li{
+
+        width: fit-content;
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 1024px) {
+    #menu-1-523600c a{
+
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+@media (max-width: 1024px) {
+    #menu-1-523600c {
+
+        gap: 15px;
+        justify-content: center;
+    }
+}
+
+
+
+@media (max-width: 1024px) {
+    .hfe-nav-menu__layout-horizontal {
+
+        width: 200px;
+        left: -150px;
+    }
+}
+
+
+
+/*POSITIONNEMENT LOGO MENU DÉROULANT RESPONSIVE*/
+
+@media (max-width: 1024px) {
+    .elementor-160 .elementor-element.elementor-element-0af99c2  {
+
+        width: 40%;
+        top: 15px;
+
+    }
+}
+
+@media (max-width: 768px) {
+    .elementor-160 .elementor-element.elementor-element-0af99c2  {
+
+        width: 100%;
+        top: -50px;
+    }
 }
 
 
 
 
-/* ----------------------------------------------PAGE D'ACCUEIL */
+
+@media (max-width: 1024px) {
+    #menu-1-523600c .menu-item {
+
+     left: 0px;
+
+    }
+}
+
+
+
+
+
+/* --------------------------------------------------------------------------PAGE D'ACCUEIL */
 
 
 /*_______________________________________________________bannière page d'accueuil */
@@ -59,6 +208,17 @@ Updated: 2024-04-02 11:38:26
 
 
 }
+
+
+@media (max-width: 370px) {
+    .elementor-105 .elementor-element.elementor-element-b149856 .elementor-heading-title {
+
+        font-size: 20px;
+    }
+}
+
+
+
 
 .fond-banniere-page-accueil {
     position: relative;
@@ -81,7 +241,8 @@ Updated: 2024-04-02 11:38:26
 .canette-banniere-accueil {
 
     z-index: 10;
-    position: relative;
+    position: absolute;
+    width: 60%;
 
 
 }
@@ -93,12 +254,21 @@ Updated: 2024-04-02 11:38:26
     }
 }
 
-@media (max-width: 770px) {
+@media (max-width: 768px) {
     .canette-banniere-accueil {
-        width: 250px;
-        bottom: 140px;
+        width: 200px;
+        height: 150px;
+        bottom: 200px;
     }
 }
+
+@media (max-width: 320px) {
+    .canette-banniere-accueil {
+        width: 150px;
+        height: 100px;
+    }
+}
+
 
 
 
@@ -119,17 +289,59 @@ Updated: 2024-04-02 11:38:26
     }
 }
 
-@media (max-width: 900px) {
+
+@media (max-width: 767px) {
     .feuillage-gauche-canette {
-        display: none;
+        width: 170px;
+        left: 200px;
+        top: 340px;
+       
     }
 }
+
+
+@media (max-width: 700px) {
+    .feuillage-gauche-canette {
+        left: 180px;
+       
+    }
+}
+
+@media (max-width: 600px) {
+    .feuillage-gauche-canette {
+        left: 120px;
+       
+    }
+}
+
+@media (max-width: 500px) {
+    .feuillage-gauche-canette {
+        left: 70px;
+       
+    }
+}
+
+
+@media (max-width: 320px) {
+    .feuillage-gauche-canette {
+        width: 150px;
+        left: 10px;
+       
+    }
+}
+
+
+
+
+
 
 .feuillage-droite-canette {
 
     z-index: 5;
+    position: absolute;
     left: -360px; 
     top: 350px;
+   
 
 
 }
@@ -139,17 +351,53 @@ Updated: 2024-04-02 11:38:26
         width: 200px;
         left: -250px;
         top: 300px;
+        
        
     }
 }
 
-@media (max-width: 900px) {
+
+@media (max-width: 767px) {
     .feuillage-droite-canette {
-        display: none;
+        width: 170px;
+        left: 380px;
+        top: -90px;
+        
+       
+    }
+}
+
+@media (max-width: 700px) {
+    .feuillage-droite-canette {
+        left: 340px;
+        
+    }
+}
+
+@media (max-width: 600px) {
+    .feuillage-droite-canette {
+        left: 290px;
+        
+    }
+}
+
+@media (max-width: 500px) {
+    .feuillage-droite-canette {
+        left: 230px;
+        
     }
 }
 
 
+@media (max-width: 320px) {
+    .feuillage-droite-canette {
+        width: 150px;
+        left: 140px;
+       
+    }
+}
+
+/*_____________________________________________________L'ÉNERGIE DES PLANTES */
 
 #energiedesplantes .e-con-inner {
 
@@ -172,6 +420,11 @@ Updated: 2024-04-02 11:38:26
 
 }
 
+.containeur-les-gouts {
+
+    position: relative;
+}
+
 
 #containeur-les-gouts .e-con-inner {
 
@@ -183,50 +436,150 @@ Updated: 2024-04-02 11:38:26
 
 
 .image-fraise {
-
+    position: relative;
     width: 393px;
     height: 262px;
+}
+
+
+@media (max-width: 300px) {
+
+    .image-fraise {
+        
+        width: 250px;
+        height: 140px;
+    }
 }
 
 
 .image-pamplemousse {
 
+    position: relative;
     width: 393px;
     height: 262px;
+}
+
+
+@media (max-width: 300px) {
+
+    .image-pamplemousse {
+        
+        width: 250px;
+        height: 140px;
+    }
 }
 
 .image-framboise {
 
+    position: relative;
     width: 393px;
     height: 262px;
 }
 
-.image-citron {
+@media (max-width: 300px) {
 
+    .image-framboise {
+        
+        width: 250px;
+        height: 140px;
+    }
+}
+
+
+.image-citron {
+    position: relative;
     width: 393px;
     height: 262px;
+}
+
+@media (max-width: 300px) {
+
+    .image-citron {
+        
+        width: 250px;
+        height: 140px;
+    }
 }
 
 
 
 /*______________________________________________________________________TITRE GOUT */
 
+
+
+
+@media (max-width: 768px) {
+
+    #containeur-les-gouts .e-con-inner {
+        
+        max-width: 450px;
+    }
+}
+
 .gout-fraise {
     position: absolute;
     z-index: 10;
-    bottom: 131px;
-    left: 50px;
+    bottom: 125px;
+    left: 60px;
 
 }
+
+@media (max-width: 768px) {
+    .gout-fraise {
+        bottom: 120px;
+        left: 60px;
+       
+    }
+}
+
+@media (max-width: 300px) {
+    .gout-fraise {
+        bottom: 50px;
+        left: 40px;
+    }
+}
+
+
+@media (max-width: 300px) {
+    .elementor-105 .elementor-element.elementor-element-1b44b9d .elementor-heading-title {
+        font-size: 30px;
+              
+    }
+}
+
+
+
 
 
 .gout-framboise {
     position: absolute;
     z-index: 10;
-    bottom: 100px;    
+    bottom: 90px;  
+    right: 20px;   
 
 }
 
+@media (max-width: 768px) {
+    .gout-framboise {
+        bottom: 80px;
+        right: 20px;
+    }
+}
+
+
+@media (max-width: 300px) {
+    .gout-framboise {
+        bottom: 40px;
+        left: 40px;
+    }
+}
+
+
+@media (max-width: 300px) {
+    .elementor-105 .elementor-element.elementor-element-ec003e9 .elementor-heading-title {
+        font-size: 30px;
+    }
+}
 
 
 .gout-pamplemousse {
@@ -234,69 +587,186 @@ Updated: 2024-04-02 11:38:26
     position: absolute;
     z-index: 10;
     bottom: 100px;
+    right: 20px;
 
 
 }
+
+@media (max-width: 768px) {
+    .gout-pamplemousse {
+        bottom: 80px;
+        right: 20px;
+    }
+}
+
+
+@media (max-width: 300px) {
+    .elementor-105 .elementor-element.elementor-element-0aec6d9 .elementor-heading-title {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 300px) {
+    .gout-pamplemousse {
+        bottom: 40px;
+        left: 25px;
+    
+    }
+}
+
+
+
 
 
 .gout-citron {
 
     position: absolute;
     z-index: 10;
-    bottom: 131px;
+    bottom: 110px;
     left: 50px;
 
 }
+
+@media (max-width: 300px) {
+    .gout-citron {
+        bottom: 55px;
+        left: 30px;
+    
+    }
+}
+
+@media (max-width: 300px) {
+    .elementor-105 .elementor-element.elementor-element-c4cfdd7 .elementor-heading-title  {
+        font-size: 30px;
+    
+    }
+}
+
 
 
 
 
 /* --------------------------------------------------------------------ce qu'ils en pensent*/
 
+@media (max-width: 768px) {
 
-.fatiha {
-    
-
+    .ilsenpensent .e-con-inner {
+        
+        max-width: 170px;
+    }
 }
-
-.vero {
-
-bottom: 180px;
-
-}
-
-.marc {
-
-bottom: 370px;
-
-}
-
-
-
-
 
 /* ------------------------------------------------------------PAGE "NOUS RENCONTRER" */
 
 .banniere-nous-rencontrer {
-    background-color: #fff; /* Couleur du fond du bord arrondi */
+    position: relative;
+    background-color: #b1a2a2; /* Couleur du fond du bord arrondi */
     width: 100%; /* Largeur pleine de l'élément parent */
-    border-bottom-left-radius: 25%; /* Arrondi le coin inférieur gauche */
-    border-bottom-right-radius: 25%; /* Arrondi le coin inférieur droit */
+    border-bottom-left-radius: 16%; /* Arrondi le coin inférieur gauche */
+    border-bottom-right-radius: 16%; /* Arrondi le coin inférieur droit */
+    height: 400px;
 
 
 }
+
+.nous-rencontrer-texte {
+
+    position: relative;
+}
+
+
+
+/*--------------------------------------- TITRE NOUS RENCONTRER*/
+
+@media (max-width: 500px) {
+
+    .elementor-15 .elementor-element.elementor-element-178ed46 .elementor-heading-title {
+      
+    font-size: 25px;
+
+    }
+}
+
+@media (max-width: 330px) {
+
+    .elementor-15 .elementor-element.elementor-element-178ed46 .elementor-heading-title {
+      
+    font-size: 18px;
+
+    }
+}
+
+
+/*--------------------------------- IMAGE PLANTE "NOUS RENCONTRER"*/
 
 .image-plante-nous-rencontrer {
     position: absolute;
     z-index: 5;
     width: 145.3px;
     height: 150.26px;
-    top: 80px;
-    left: 200px;
+    bottom: 80px;
+    right: 850px;
     gap: 0px;
     opacity: 1; /* Changer l'opacité à 1 pour afficher l'image */
     transform: rotate(45deg); /* Appliquer une rotation de -70 degrés */
 }
+
+
+
+@media (max-width: 1024px) {
+
+    .image-plante-nous-rencontrer {
+
+    width: 135.3px;
+    height: 140.26px;
+    top: -70px;
+    left: -60px;
+    }
+   
+    }
+
+
+@media (max-width: 768px) {
+
+    .image-plante-nous-rencontrer {
+        
+    width: 90px;
+    height: 100px;
+    top: -40px;
+    left: 90px;
+    }
+}
+
+
+@media (max-width: 500px) {
+
+    .image-plante-nous-rencontrer {
+
+    top: -60px;
+    left: 60px;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .image-plante-nous-rencontrer {
+    
+        left: 30px;
+    }
+}
+
+@media (max-width: 330px) {
+
+    .image-plante-nous-rencontrer {
+
+        width: 70px;
+        height: 90px;
+         left: 30px;
+    }
+}
+
+
+
 
 
 /* ------------------------------------------------------------ section l'équipe */
@@ -307,9 +777,19 @@ bottom: 370px;
 
 }
 
+@media (max-width: 768px) {
+
+    #equipe .e-con-inner {
+        
+    max-width: 500px;
+
+    }
+}
+
+
 #equipe .e-con-inner {
 
-    height: 300px;
+    height: auto;
 }
 
 
@@ -321,6 +801,94 @@ bottom: 370px;
     left: 1150px;
     top: -90px;    
 }
+
+@media (max-width: 1400px) {
+
+    .feuillage-l-equipe {
+        
+        left: 980px;
+        top: -55px;    
+        width: 150.21px;
+        height: 220.08px;
+
+    }
+}
+
+
+@media (max-width: 1050px) {
+
+    .feuillage-l-equipe {
+        
+        left: 820px;
+        top: -50px;    
+
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .feuillage-l-equipe {
+        
+        left: 800px;
+        top: -50px;    
+
+    }
+}
+
+@media (max-width: 900px) {
+
+    .feuillage-l-equipe {
+        
+        left: 700px;
+        top: -50px;    
+
+    }
+}
+
+@media (max-width: 800px) {
+
+    .feuillage-l-equipe {
+        
+        left: 600px;
+        top: -50px;    
+
+    }
+}
+
+@media (max-width: 760px) {
+
+    .feuillage-l-equipe {
+        
+        left: 500px;
+        top: -50px;    
+
+    }
+}
+
+@media (max-width: 620px) {
+
+    .feuillage-l-equipe {
+        
+        left: 400px;
+        top: -50px;    
+
+    }
+}
+
+
+@media (max-width: 500px) {
+
+    .feuillage-l-equipe {
+        
+        left: 180px;
+        top: 12px;   
+        width: 100.21px;
+        height: 190.08px; 
+
+    }
+}
+
+
 
 
 
@@ -335,6 +903,78 @@ bottom: 370px;
     transform: rotate(2deg); /* Rotation de l'image de 160 degrés */
     z-index: 5;
 }
+
+
+
+@media (max-width: 1300px) {
+
+    .feuillage-formulaire {
+        
+        right: 750px;
+    }
+}
+
+
+@media (max-width: 1150px) {
+
+    .feuillage-formulaire {
+        
+        right: 660px;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .feuillage-formulaire {
+        
+        right: 570px;
+    }
+}
+
+
+@media (max-width: 900px) {
+
+    .feuillage-formulaire {
+        
+        right: 500px;
+    }
+}
+
+
+@media (max-width: 800px) {
+
+    .feuillage-formulaire {
+        
+        right: 430px;
+    }
+}
+
+@media (max-width: 700px) {
+
+    .feuillage-formulaire {
+        
+        right: 350px;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .feuillage-formulaire {
+        
+        right: 250px;
+    }
+}
+
+
+@media (max-width: 370px) {
+
+    .feuillage-formulaire {
+        
+        right: 150px;
+    }
+}
+
+
 
 .wpr-form-field-textual.wpr-form-field {
     z-index: 10;
@@ -366,9 +1006,31 @@ bottom: 370px;
 }
 
 
+/*------------------------------------------------ BOUTON FORMULAIRE "ENVOYER" */
+
+@media (max-width: 500px) {
+
+    .elementor-15 .elementor-element.elementor-element-d962f8d .wpr-field-group.wpr-form-field-type-submit {
+        
+        width: 60%;
+    }
+}
 
 
 /*------------------------------------------------------------------------ PAGE "COMMANDER"*/
+
+
+/* TITRE COMMANDER */
+
+
+@media (max-width: 500px) {
+
+    .elementor-17 .elementor-element.elementor-element-5786a6b .elementor-heading-title {
+        
+        font-size: 25px;
+    }
+}
+
 
 /* --------------------------------------------------------------------------------compteur gout */
 
@@ -385,6 +1047,12 @@ max-width: 39px;
 }
 
 
+.encadre-commander {
+
+    position: relative;
+}
+
+
 
 /* FRAISE */
 
@@ -392,9 +1060,100 @@ max-width: 39px;
 .titre-fraise {
     position: absolute;
     top: 70px; 
-    left: 100px;
+    left: 50px;
 
 }
+
+@media (max-width: 1240px) {
+    .elementor-17 .elementor-element.elementor-element-bfd4688 .elementor-heading-title {
+        
+        position: absolute;
+        top: -10px; 
+       left: -20px;
+    }
+}
+
+
+@media (max-width: 1200px) {
+    .elementor-17 .elementor-element.elementor-element-bfd4688 .elementor-heading-title {
+        
+        position: absolute;
+        top: -10px; 
+       left: -20px;
+    }
+}
+
+
+@media (max-width: 1071px) {
+    .elementor-17 .elementor-element.elementor-element-bfd4688 .elementor-heading-title {
+        
+        position: absolute;
+        font-size: 15px;
+        top: -20px; 
+       left: -20px;
+        
+    }
+}
+
+@media (max-width: 900px) {
+    .elementor-17 .elementor-element.elementor-element-bfd4688 .elementor-heading-title {
+        
+        position: absolute;
+        font-size: 11px;
+        top: -25px; 
+    }
+}
+
+@media (max-width: 768px) {
+    .elementor-17 .elementor-element.elementor-element-bfd4688 .elementor-heading-title {
+        
+        position: absolute;
+        font-size: 20px;
+        top: -5px; 
+        left: 100px;
+    }
+}
+
+@media (max-width: 700px) {
+    .elementor-17 .elementor-element.elementor-element-bfd4688 .elementor-heading-title {
+        
+        position: absolute;
+        top: -5px; 
+        left: 80px;
+    }
+}
+
+@media (max-width: 600px) {
+    .elementor-17 .elementor-element.elementor-element-bfd4688 .elementor-heading-title {
+        
+        position: absolute;
+        top: -5px; 
+        left: 50px;
+    }
+}
+
+@media (max-width: 500px) {
+    .elementor-17 .elementor-element.elementor-element-bfd4688 .elementor-heading-title {
+        
+        position: absolute;
+        top: -5px; 
+        left: 20px;
+    }
+}
+
+@media (max-width: 350px) {
+    .elementor-17 .elementor-element.elementor-element-bfd4688 .elementor-heading-title {
+        
+        top: -12px; 
+        left: -22px;
+    }
+}
+
+
+
+
+
+/*___ENCADRÉ COMPTEUR FRAISE*/
 
 .elementor-17 .elementor-element.elementor-element-79d279c .wpr-field-group.wpr-form-field-type-submit {
 
@@ -405,9 +1164,89 @@ max-width: 39px;
 
 .titre-pamplemousse {
     position: absolute;
-    top: 70px; 
-    left: 100px;
+    top: 60px; 
+    left: 40px;
 }
+
+@media (max-width: 1240px) {
+    .elementor-17 .elementor-element.elementor-element-f1c6ca7 .elementor-heading-title {
+        
+        position: absolute;
+        top: -10px; 
+       left: -15px;
+    }
+}
+
+
+@media (max-width: 1200px) {
+    .elementor-17 .elementor-element.elementor-element-f1c6ca7 .elementor-heading-title {
+        
+        top: -15px; 
+       left: -20px;
+    }
+}
+
+
+@media (max-width: 1071px) {
+    .elementor-17 .elementor-element.elementor-element-f1c6ca7 .elementor-heading-title {
+        font-size: 15px;
+        top: -20px; 
+        left: -15px;
+    }
+}
+
+
+@media (max-width: 900px) {
+    .elementor-17 .elementor-element.elementor-element-f1c6ca7 .elementor-heading-title {
+        font-size: 11px;
+        top: -20px; 
+    }
+}
+
+@media (max-width: 768px) {
+    .elementor-17 .elementor-element.elementor-element-f1c6ca7 .elementor-heading-title {
+        position: absolute;
+        font-size: 20px;
+        top: -5px; 
+        left: 100px;
+    }
+}
+
+
+
+@media (max-width: 700px) {
+    .elementor-17 .elementor-element.elementor-element-f1c6ca7 .elementor-heading-title {
+        position: absolute;
+        font-size: 20px;
+        top: -5px; 
+        left: 75px;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .elementor-17 .elementor-element.elementor-element-f1c6ca7 .elementor-heading-title {
+        left: 50px;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .elementor-17 .elementor-element.elementor-element-f1c6ca7 .elementor-heading-title {
+        left: 20px;
+    }
+}
+
+@media (max-width: 350px) {
+    .elementor-17 .elementor-element.elementor-element-f1c6ca7 .elementor-heading-title {
+        left: -28px;
+        top: -15px;
+    }
+}
+
+
+
+/*___ENCADRÉ COMPTEUR PAMPLE*/
 
 
 .elementor-17 .elementor-element.elementor-element-c9443b9 .wpr-button[type="submit"] {
@@ -421,32 +1260,188 @@ max-width: 39px;
 
 .titre-framboise {
     position: absolute;
-    top: 70px; 
-    left: 100px;
+    top: 60px; 
+    left: 60px;
 }
 
+@media (max-width: 1240px) {
+    .titre-framboise {
+        
+        top: 45px; 
+       left: 40px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .elementor-17 .elementor-element.elementor-element-9eca484 .elementor-heading-title {
+        
+        top: -20px; 
+       left: -30px;
+    }
+}
+
+@media (max-width: 1071px) {
+    .elementor-17 .elementor-element.elementor-element-9eca484 .elementor-heading-title {
+        font-size: 15px;
+        top: -20px; 
+       left: -20px;
+    }
+}
+
+
+@media (max-width: 900px) {
+    .titre-framboise {
+        top: 38px; 
+        left: 40px;
+    }
+}
+
+@media (max-width: 900px) {
+    .elementor-17 .elementor-element.elementor-element-9eca484 .elementor-heading-title {
+        font-size: 11px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .elementor-17 .elementor-element.elementor-element-9eca484 .elementor-heading-title {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .titre-framboise {
+        left: 160px;
+        top: 60px;
+    }
+}
+
+
+@media (max-width: 700px) {
+    .titre-framboise {
+        left: 140px;
+    }
+}
+
+@media (max-width: 500px) {
+    .titre-framboise {
+        left: 80px;
+    }
+}
+
+
+/*___ENCADRÉ COMPTEUR FRAMB*/
 
 .elementor-17 .elementor-element.elementor-element-0e4b6ed .wpr-button[type="submit"] {
 
     display: none;
 }
 
+
+
 /*CITRON*/ 
 
 .titre-citron {
     position: absolute;
     top: 70px; 
-    left: 100px;
+    left: 50px;
 
 }
 
+@media (max-width: 1240px) {
+    .elementor-17 .elementor-element.elementor-element-e6027a3 .elementor-heading-title  {
+        
+        position: absolute;
+        top: -10px; 
+       left: -20px;
+    
+    }
+}
 
-/*---------------------------------------------------------------------- VOS INFOS & LIVRAISON*/
+
+@media (max-width: 1200px) {
+    .elementor-17 .elementor-element.elementor-element-e6027a3 .elementor-heading-title  {
+        
+        top: -15px; 
+       left: -20px;
+    
+    }
+}
+
+@media (max-width: 1071px) {
+    .elementor-17 .elementor-element.elementor-element-e6027a3 .elementor-heading-title  {
+
+        font-size: 15px;
+        top: -17px; 
+       left: -15px;
+    }
+}
+
+@media (max-width: 900px) {
+    .elementor-17 .elementor-element.elementor-element-e6027a3 .elementor-heading-title  {
+
+        font-size: 11px;
+        top: -25px; 
+
+
+    }
+}
+
+
+@media (max-width: 768px) {
+    .elementor-17 .elementor-element.elementor-element-e6027a3 .elementor-heading-title  {
+
+        font-size: 20px;
+        top: -5px; 
+        left: 95px; 
+
+
+    }
+}
+
+
+@media (max-width: 700px) {
+    .elementor-17 .elementor-element.elementor-element-e6027a3 .elementor-heading-title  {
+
+         position: absolute;
+        left: 75px; 
+
+
+    }
+}
+
+@media (max-width: 500px) {
+    .elementor-17 .elementor-element.elementor-element-e6027a3 .elementor-heading-title  {
+
+         position: absolute;
+        left: 15px; 
+
+
+    }
+}
+
+
+/*___ENCADRÉ COMPTEUR CITRON*/
 
 .elementor-17 .elementor-element.elementor-element-8d486e7 .wpr-button[type="submit"] {
 
     display: none;
 }
+
+/*______________RESPONSIVE cadre "commander" _______*/
+
+
+@media (max-width: 768px) {
+    .elementor-17 .elementor-element.elementor-element-774e0c5  {
+
+    max-width: 60%;
+
+    }
+}
+
+
+/*---------------------------------------------------------------------- VOS INFOS & LIVRAISON*/
+
 
 
 .vos-informations {
@@ -506,6 +1501,148 @@ max-width: 39px;
  
  
 
+
+/*_____________________*/
+
+@media (max-width: 1240px) {
+    .separateurvosinfoetlivraison  {
+
+    display: none;
+    }
+}
+
+
+
+@media (max-width: 1240px) {
+    #vosinforetlivraison .e-con-inner {
+
+    display: flex;
+    flex-direction: column; 
+    max-width: 60%; 
+    }
+}
+
+
+@media (max-width: 1240px) {
+    .vos-informations {
+    
+        left: -200px;
+    }
+}
+
+@media (max-width: 500px) {
+    .vos-informations {
+    
+        left: -240px;
+    }
+}
+
+
+
+@media (max-width: 1240px) {
+    .livraison {
+    
+        left: -200px;
+    }
+}
+
+@media (max-width: 500px) {
+    .livraison {
+    
+        left: -240px;
+    }
+}
+
+
+
+@media (max-width: 1240px) {
+    #form-field-name-vos-informations {
+    
+        min-width: 500px;
+    }
+}
+
+
+@media (max-width: 700px) {
+    #form-field-name-vos-informations {
+    
+        min-width: 400px;
+    }
+}
+
+
+
+
+@media (max-width: 1240px) {
+    #form-field-prenom-vos-informations {
+    
+        min-width: 500px;
+    }
+}
+
+@media (max-width: 700px) {
+    #form-field-prenom-vos-informations {
+    
+        min-width: 400px;
+    }
+}
+
+@media (max-width: 1240px) {
+    #form-field-email-vos-informations  {
+    
+        min-width: 500px;
+    }
+}
+
+@media (max-width: 700px) {
+    #form-field-email-vos-informations  {
+    
+        min-width: 400px;
+    }
+}
+
+@media (max-width: 1240px) {
+    #form-field-adresse-livraison {
+    
+        min-width: 500px;
+    }
+}
+
+@media (max-width: 700px) {
+    #form-field-adresse-livraison {
+    
+        min-width: 400px;
+    }
+}
+
+@media (max-width: 1240px) {
+    #form-field-code-postal {
+    
+        min-width: 500px;
+    }
+}
+
+
+@media (max-width: 700px) {
+    #form-field-code-postal {
+    
+        min-width: 400px;
+    }
+}
+
+@media (max-width: 1240px) {
+    #form-field-ville {
+    
+        min-width: 500px;
+    }
+}
+
+@media (max-width: 700px) {
+    #form-field-ville {
+    
+        min-width: 400px;
+    }
+}
 
 
 
